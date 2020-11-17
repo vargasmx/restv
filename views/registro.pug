@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  h1= title
+  form(action="", method="POST")
+    label(for="username") Nombre de Usuario 
+    input#username(type="text", name="username")
+    br
+    label(for="firstname") Nombre(s) 
+    input#firstname(type="text", name="firstname")
+    br
+    label(for="lastname") Apellido(s) 
+    input#lastname(type="text", name="lastname")
+    br
+    label(for="password") Contraseña  
+    input#password(type="password", name="password")
+    br
+    input(type="submit", value="Registrar")
